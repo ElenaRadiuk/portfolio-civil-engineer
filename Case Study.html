@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Case Study — Daniel Stan, PE</title>
+<meta name="description" content="Project case study by Daniel Stan, PE — civil engineering overview, scope, challenges, solution, and results." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav scrolled" id="nav">
+  <a href="Portfolio.html" class="logo" aria-label="Daniel Stan, Civil Engineer — home">
+    <span class="mark">DS</span>
+    <span>Daniel Stan<small>Civil Engineer · PE</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="Portfolio.html#about">About</a>
+    <a href="Portfolio.html#skills">Expertise</a>
+    <a href="Portfolio.html#projects">Projects</a>
+    <a href="Portfolio.html#credentials">Credentials</a>
+    <a href="Portfolio.html#contact">Contact</a>
+  </nav>
+  <div class="nav-cta">
+    <a href="Portfolio.html#resume" class="btn btn-ghost">Resume</a>
+    <a href="Portfolio.html#contact" class="btn btn-primary">Get in touch</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="Portfolio.html#about">About</a>
+  <a href="Portfolio.html#skills">Expertise</a>
+  <a href="Portfolio.html#projects">Projects</a>
+  <a href="Portfolio.html#credentials">Credentials</a>
+  <a href="Portfolio.html#contact">Contact</a>
+</div>
+
+<main>
+
+<!-- ============================ CS HERO ============================ -->
+<section class="cs-hero">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="Portfolio.html">Home</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="Portfolio.html#projects">Projects</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      <span id="bcTitle">Case Study</span>
+    </nav>
+    <span class="type" id="csType">Project</span>
+    <h1 id="csTitle">Project Case Study</h1>
+    <p class="lede" id="csLede"></p>
+    <div class="loc">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span id="csLoc"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ COVER ============================ -->
+<section class="wrap cs-cover">
+  <div class="frame">
+    <image-slot id="cs-cover" shape="rect" fit="cover" placeholder="Drop a project cover image"></image-slot>
+  </div>
+  <div class="cs-metrics" id="csMetrics"></div>
+</section>
+
+<!-- ============================ BODY ============================ -->
+<section class="section" style="padding-top:clamp(56px,7vw,88px)">
+  <div class="wrap cs-body">
+    <div class="cs-main">
+
+      <div class="block">
+        <h2><span class="num">01</span>Project Overview</h2>
+        <p id="csOverview"></p>
+      </div>
+
+      <div class="cs-figure">
+        <image-slot id="cs-fig1" shape="rect" fit="cover" placeholder="Site photo or plan drawing"></image-slot>
+      </div>
+
+      <div class="block">
+        <h2><span class="num">02</span>Scope of Work</h2>
+        <ul id="csScope"></ul>
+      </div>
+
+      <div class="block">
+        <h2><span class="num">03</span>Challenges</h2>
+        <p id="csChallenges"></p>
+      </div>
+
+      <div class="block">
+        <h2><span class="num">04</span>Engineering Solution</h2>
+        <p id="csSolution"></p>
+      </div>
+
+      <div class="cs-figure">
+        <image-slot id="cs-fig2" shape="rect" fit="cover" placeholder="Construction photo or detail"></image-slot>
+      </div>
+
+      <div class="block">
+        <h2><span class="num">05</span>Results</h2>
+        <ul id="csResults"></ul>
+      </div>
+
+      <div class="block">
+        <h2><span class="num">06</span>Technical Highlights</h2>
+        <ul id="csHighlights"></ul>
+      </div>
+
+    </div>
+
+    <aside class="cs-side">
+      <div class="panel">
+        <h3>Project Facts</h3>
+        <div class="kv"><div class="k">Client</div><div class="v" id="sbClient"></div></div>
+        <div class="kv"><div class="k">Budget</div><div class="v" id="sbBudget"></div></div>
+        <div class="kv"><div class="k">Timeline</div><div class="v" id="sbTimeline"></div></div>
+        <div class="kv"><div class="k">Team Size</div><div class="v" id="sbTeam"></div></div>
+        <div class="kv"><div class="k">Area Served</div><div class="v" id="sbArea"></div></div>
+        <div class="kv"><div class="k">Role</div><div class="v" id="sbRole"></div></div>
+      </div>
+      <div class="panel">
+        <h3>Technologies Used</h3>
+        <div class="tech" id="sbTech"></div>
+      </div>
+      <div class="panel cta">
+        <h3>Similar project?</h3>
+        <p>Let’s talk about how I can bring the same rigor and results to your infrastructure.</p>
+        <a href="Portfolio.html#contact" class="btn btn-light" style="width:100%">Start a conversation</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================ NEXT PROJECT ============================ -->
+<section class="cs-next">
+  <div class="wrap">
+    <a id="csNext" href="#">
+      <div>
+        <div class="lab">Next project</div>
+        <div class="ttl" id="csNextTitle"></div>
+      </div>
+      <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="logo"><span class="mark">DS</span> Daniel Stan, PE</div>
+        <p class="blurb">Civil engineer building durable, cost-effective infrastructure across California — structural, transportation, site, and water resources.</p>
+      </div>
+      <div class="col">
+        <h4>Navigate</h4>
+        <a href="Portfolio.html#about">About</a>
+        <a href="Portfolio.html#skills">Expertise</a>
+        <a href="Portfolio.html#projects">Projects</a>
+        <a href="Portfolio.html#credentials">Credentials</a>
+      </div>
+      <div class="col">
+        <h4>Services</h4>
+        <a href="Portfolio.html#contact">Structural Design</a>
+        <a href="Portfolio.html#contact">Transportation</a>
+        <a href="Portfolio.html#contact">Site Development</a>
+        <a href="Portfolio.html#contact">Construction Mgmt</a>
+      </div>
+      <div class="col">
+        <h4>Contact</h4>
+        <a href="mailto:daniel.stan@email.com">daniel.stan@email.com</a>
+        <a href="tel:+11234567890">(123) 456-7890</a>
+        <a href="Portfolio.html#contact">San Diego, CA</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="cp">© <span id="year">2026</span> Daniel Stan, PE · Civil Engineer · License No. C-00000</div>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg></a>
+        <a href="mailto:daniel.stan@email.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script src="image-slot.js"></script>
+<script>
+  const PROJECTS = {
+    "highway-expansion": {
+      type:"Transportation Engineering", title:"I-15 Highway Expansion",
+      location:"San Diego County, California",
+      lede:"Widening and managed-lane addition along a congested 6-mile interstate corridor, delivered with minimal disruption to 180,000 daily vehicles.",
+      overview:"The I-15 corridor had reached capacity, with recurring peak-hour congestion and rising incident rates. The program added a managed express lane in each direction, reconstructed three interchanges, and modernized the drainage and lighting systems across six miles — all while maintaining live traffic throughout construction.",
+      scope:["Geometric design of 6 miles of widened mainline and auxiliary lanes","Reconstruction of three major interchanges","Traffic control and construction staging plans","Drainage, lighting, and signage modernization"],
+      challenges:"Maintaining full traffic capacity during construction was the defining constraint. Night-work windows, temporary lane shifts, and phased staging all had to be engineered around a corridor that could not close. Coordinating utility relocations with multiple agencies added schedule risk.",
+      solution:"We modeled construction staging in SYNCHRO and sequenced work into 14 discrete phases, each validated against traffic throughput targets. Leveraging project data in Trimble Business Center, we proactively managed risks and resequenced critical-path activities — cutting projected delays substantially.",
+      results:["44% reduction in projected project delays and cost overruns","Zero full-corridor closures across the build","Completed within budget and ahead of the baseline schedule","Peak-hour travel time reduced by an estimated 22%"],
+      highlights:["SYNCHRO traffic micro-simulation for staging validation","Primavera P6 master schedule across 14 phases","Trimble Business Center data-driven risk management","AASHTO-compliant geometric design"],
+      client:"Caltrans District 11", budget:"$48M", timeline:"32 months", team:"24 engineers & inspectors", area:"6-mile corridor", role:"Lead Civil Engineer",
+      tech:["AutoCAD Civil 3D","SYNCHRO","Primavera P6","Trimble Business Center","HEC-RAS"],
+      next:"water-system"
+    },
+    "water-system": {
+      type:"Water Resources", title:"Municipal Water System Upgrade",
+      location:"Los Angeles, California",
+      lede:"Replacement of aging distribution mains and a pump-station retrofit restoring reliable, code-compliant service to 40,000 residents.",
+      overview:"A century-old distribution network was suffering frequent main breaks and pressure deficiencies. The project replaced critical mains, retrofit a key pump station, and added SCADA-ready instrumentation to bring the system to current reliability and seismic standards.",
+      scope:["Replacement of 8 miles of distribution mains","Pump station structural and mechanical retrofit","Hydraulic modeling and pressure-zone rebalancing","Construction administration and inspection"],
+      challenges:"Work threaded through dense, occupied neighborhoods with limited staging room and strict noise and access restrictions. Maintaining continuous water service to residents during cutover required careful valve sequencing and temporary bypass design.",
+      solution:"We built a calibrated hydraulic model to sequence shutdowns with zero service interruptions, and implemented a rigorous quality-control program during construction that held the defect rate to under one percent across all installed work.",
+      results:["Under 1% defect rate across all completed work","40,000 residents returned to reliable service","Main-break frequency reduced by an estimated 60%","Delivered on budget with no service interruptions"],
+      highlights:["Calibrated hydraulic network model","Seismic retrofit to current code","SCADA-ready instrumentation","Procore-managed QA/QC program"],
+      client:"LA Dept. of Water & Power", budget:"$31M", timeline:"26 months", team:"18 engineers & inspectors", area:"40,000 residents", role:"Project Engineer",
+      tech:["AutoCAD","Procore","ArcGIS","Bluebeam","MicroStation"],
+      next:"commercial-site"
+    },
+    "commercial-site": {
+      type:"Site Development", title:"Commercial Site Development",
+      location:"Irvine, California",
+      lede:"Complete civil engineering package for a 22-acre mixed-use commercial campus — grading, utilities, access, and stormwater.",
+      overview:"A greenfield 22-acre parcel was developed into a mixed-use commercial campus. Our team delivered the full civil package from entitlement support through construction documents, balancing earthwork, utility design, and ADA-compliant access across the site.",
+      scope:["Mass and precise grading design (balanced earthwork)","Wet and dry utility design and coordination","On-site circulation, parking, and ADA access","Stormwater quality and detention design"],
+      challenges:"A tight earthwork balance was needed to avoid costly import/export of soil, and the site's existing drainage patterns had to be preserved downstream. Coordinating six utility providers on a compressed schedule created sequencing complexity.",
+      solution:"Through iterative grading optimization in Civil 3D we achieved a near-balanced cut/fill, eliminating offsite haul costs. Value-engineering the utility corridors and detention system contributed to a program that saved the owner significant capital.",
+      results:["Balanced earthwork — near-zero soil import/export","Part of value-engineering effort saving $2.1M program-wide","Delivered construction documents ahead of schedule","Full ADA and stormwater code compliance"],
+      highlights:["Civil 3D grading optimization","LID stormwater treatment design","Six-utility coordination","Balanced cut/fill earthwork model"],
+      client:"Harbor Development Group", budget:"$18M", timeline:"19 months", team:"12 engineers & designers", area:"22 acres", role:"Project Engineer",
+      tech:["AutoCAD Civil 3D","HEC-RAS","Bluebeam","ArcGIS","Procore"],
+      next:"bridge-rehab"
+    },
+    "bridge-rehab": {
+      type:"Structural Engineering", title:"Bridge Rehabilitation Program",
+      location:"San Francisco, California",
+      lede:"Seismic retrofit and deck replacement across a network of five aging overpass structures, extending service life by 50 years.",
+      overview:"Five mid-century overpass structures were nearing the end of their service life and fell short of current seismic standards. The program delivered column jacketing, bearing replacement, and full deck reconstruction to bring each structure up to code.",
+      scope:["Seismic evaluation of five structures","Column jacketing and foundation strengthening","Full deck replacement and joint modernization","Staged construction under live traffic"],
+      challenges:"Each structure carried active traffic and crossed busy routes below, so demolition and reconstruction had to be staged in narrow windows. Existing as-built records were incomplete, requiring field investigation and structural modeling to verify capacity.",
+      solution:"We modeled each structure in SAP2000 to confirm retrofit demands and designed staged construction to keep lanes open. Rigorous quality inspections during construction drove a measurable reduction in rework across the program.",
+      results:["28% reduction in rework through rigorous inspection","Service life extended by an estimated 50 years","All five structures brought to current seismic code","Zero lost-time safety incidents"],
+      highlights:["SAP2000 structural modeling","Caltrans seismic retrofit standards","Staged construction under live traffic","Column jacketing & bearing replacement"],
+      client:"City & County of San Francisco", budget:"$26M", timeline:"24 months", team:"16 engineers & inspectors", area:"5 structures", role:"Assistant / Project Engineer",
+      tech:["SAP2000","AutoCAD","Bluebeam","Procore","MicroStation"],
+      next:"stormwater"
+    },
+    "stormwater": {
+      type:"Water Resources", title:"Stormwater Management System",
+      location:"Sacramento, California",
+      lede:"Green-infrastructure detention and conveyance system engineered to safely manage a 100-year storm event for an urban watershed.",
+      overview:"Chronic localized flooding prompted a comprehensive stormwater upgrade for an urban sub-watershed. The design combined green infrastructure with traditional conveyance and a regional detention basin to manage peak flows and improve water quality.",
+      scope:["Hydrologic and hydraulic modeling (HEC-RAS)","Regional detention basin design","Bioretention and green-infrastructure features","Storm-drain conveyance upgrades"],
+      challenges:"The watershed was highly urbanized with limited land for detention, and the system had to perform under a 100-year design storm while improving downstream water quality to meet regulatory targets.",
+      solution:"Detailed HEC-RAS modeling sized a compact regional basin and distributed bioretention features that together attenuate peak flows. The green-infrastructure approach met water-quality permits while reducing the required pipe network.",
+      results:["Rated to safely convey a 100-year storm event","Localized flooding risk substantially reduced","Met regional water-quality permit targets","Green infrastructure reduced pipe network costs"],
+      highlights:["HEC-RAS hydraulic modeling","100-year design storm capacity","LID / bioretention water-quality treatment","Regional detention basin design"],
+      client:"City of Sacramento", budget:"$14M", timeline:"21 months", team:"10 engineers & designers", area:"Urban sub-watershed", role:"Project Engineer",
+      tech:["HEC-RAS","AutoCAD Civil 3D","ArcGIS","GeoStudio","Bluebeam"],
+      next:"residential-infra"
+    },
+    "residential-infra": {
+      type:"Site Development", title:"Residential Community Infrastructure",
+      location:"Chula Vista, California",
+      lede:"Master-planned roadway, grading, and utility infrastructure enabling a 380-home residential community.",
+      overview:"A 380-home master-planned community required complete backbone infrastructure. Our team designed the road network, grading, and wet/dry utilities, phasing the work to align with the builder's construction sequence.",
+      scope:["Master roadway and intersection design","Mass grading and lot-pad design","Wet and dry utility backbone","Phasing plan aligned to builder sequence"],
+      challenges:"The hillside site demanded extensive grading with strict slope-stability and erosion-control requirements. Infrastructure had to be phased to deliver buildable lots early while keeping overall earthwork economical.",
+      solution:"Slope-stability analysis in GeoStudio guided a grading plan that balanced earthwork and met geotechnical requirements. A carefully sequenced phasing plan delivered the first buildable lots months ahead of the original projection.",
+      results:["380 home sites enabled across phased delivery","First buildable lots delivered ahead of schedule","Economical balanced-earthwork grading plan","Full erosion-control and slope-stability compliance"],
+      highlights:["GeoStudio slope-stability analysis","Balanced-earthwork grading","Phased utility backbone design","NPDES erosion-control planning"],
+      client:"Pacific Ridge Communities", budget:"$22M", timeline:"28 months", team:"14 engineers & designers", area:"380 home sites", role:"Senior Civil Engineer",
+      tech:["AutoCAD Civil 3D","GeoStudio","ArcGIS","Procore","Primavera P6"],
+      next:"highway-expansion"
+    }
+  };
+
+  const checkSVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>';
+
+  const params = new URLSearchParams(location.search);
+  const key = params.get('p');
+  const p = PROJECTS[key] || PROJECTS["highway-expansion"];
+
+  document.title = p.title + " — Daniel Stan, PE";
+  const set = (id, txt) => { document.getElementById(id).textContent = txt; };
+  set('bcTitle', p.title); set('csType', p.type); set('csTitle', p.title);
+  set('csLede', p.lede); set('csLoc', p.location); set('csOverview', p.overview);
+  set('csChallenges', p.challenges); set('csSolution', p.solution);
+  set('sbClient', p.client); set('sbBudget', p.budget); set('sbTimeline', p.timeline);
+  set('sbTeam', p.team); set('sbArea', p.area); set('sbRole', p.role);
+
+  // metrics bar
+  document.getElementById('csMetrics').innerHTML = [
+    {v:p.budget, l:'Budget'},{v:p.timeline, l:'Timeline'},{v:p.team.split(' ')[0], l:'Team Size'},{v:p.area.split(' ')[0]+ (isNaN(parseInt(p.area))?'':''), l:'Area Served'}
+  ].map(m=>`<div class="m"><div class="mv">${m.v}</div><div class="ml">${m.l}</div></div>`).join('');
+  // fix area served to show full where short
+  document.querySelectorAll('#csMetrics .m')[3].querySelector('.mv').textContent = p.area;
+
+  const list = (id, arr, withCheck) => {
+    document.getElementById(id).innerHTML = arr.map(i => withCheck ? `<li>${checkSVG}${i}</li>` : `<li>${checkSVG}${i}</li>`).join('');
+  };
+  list('csScope', p.scope, true);
+  list('csResults', p.results, true);
+  list('csHighlights', p.highlights, true);
+
+  document.getElementById('sbTech').innerHTML = p.tech.map(t=>`<span class="t">${t}</span>`).join('');
+
+  // next project
+  const np = PROJECTS[p.next];
+  document.getElementById('csNext').href = 'Case Study.html?p=' + p.next;
+  document.getElementById('csNextTitle').textContent = np.title;
+
+  // year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // back to top + nav
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', () => toTop.classList.toggle('show', window.scrollY > 700), {passive:true});
+  toTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // mobile menu
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    const open = !menu.classList.contains('open');
+    menu.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open?'true':'false');
+    document.body.style.overflow = open ? 'hidden':'';
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); document.body.style.overflow=''; }));
+</script>
+</body>
+</html>
